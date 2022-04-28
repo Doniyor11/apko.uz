@@ -1,0 +1,39 @@
+.services {
+  padding-top: 100px;
+
+  &__item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+
+    p {
+      position: absolute;
+      z-index: 2;
+      bottom: 50px;
+      max-width: 190px;
+      font-weight: 800;
+      font-size: 20px;
+      padding-left: 40px;
+      margin: 0;
+      line-height: 24px;
+      color: var(--light-color);
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background-color: var(--btn-color);
+      opacity: 0.4;
+    }
+
+  }
+
+  .services__two__item_fulltext{
+    max-width: 250px;
+  }
+}

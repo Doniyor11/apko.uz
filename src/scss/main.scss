@@ -1,3 +1,5 @@
+@import url('http://fonts.cdnfonts.com/css/proxima-nova-2');
+
 // базовые подключения
 @import "vars";
 @import "mixins";
@@ -6,11 +8,16 @@
 
 // подключения компонентов страницы
 @import "./components/header";
+@import "./components/navbar";
+@import "./components/phone";
+@import "./components/hero";
+@import "./components/info-block";
+@import "./components/services";
+@import "components/product";
+@import "components/info-block2";
+@import "components/services2";
+@import "components/clients";
+@import "components/partner";
+@import "components/call";
 
-// тестовые стили, удалите их
-.page__body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: var(--vh);
-}
+

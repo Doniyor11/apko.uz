@@ -1,0 +1,29 @@
+.info__two {
+  padding-top: 130px;
+
+  &__row {
+    &-title {
+      margin: 55px 0 0 0;
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 44px;
+      color: var(--black-color);
+      max-width: 315px;
+    }
+
+    &-desc {
+      margin: 45px 0 0 0;
+      max-width: 525px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 27px;
+      color: var(--black-color);
+      opacity: 0.8
+    }
+
+    .hero__btn {
+      margin-top: 50px;
+    }
+  }
+}

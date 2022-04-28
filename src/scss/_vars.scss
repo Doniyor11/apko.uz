@@ -2,11 +2,15 @@
 // colors
 :root {
   // base
-  --font-family: "Open Sans", sans-serif;
-  --content-width: 1170px;
+  --font-family: 'Proxima Nova', sans-serif;
+  --content-width: 1370px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // colors
   --light-color: #fff;
+  --black-color: #000;
+  --btn-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  --btn-color: #19538A;
+  --btn-radius: 10px;
 }

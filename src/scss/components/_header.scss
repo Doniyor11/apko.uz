@@ -1,0 +1,15 @@
+.header {
+  background-color: var(--light-color);
+  padding: 20px 0 20px 0;
+
+  &__menu {
+    @include flex-all-sb;
+
+  }
+
+  &__navbar {
+    @include flex-v-center;
+
+  }
+
+}

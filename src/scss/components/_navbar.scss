@@ -1,0 +1,17 @@
+.header__navbar {
+
+  .header__nav {
+
+    &_link {
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 16px;
+      color: var(--black-color);
+    }
+    &:not(:last-child) {
+      margin-right: 35px;
+    }
+  }
+
+
+}
