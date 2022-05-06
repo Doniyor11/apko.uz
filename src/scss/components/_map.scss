@@ -1,0 +1,53 @@
+.map {
+  width: 100%;
+  position: relative;
+
+  &__row {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 700px;
+    background-color: #19538a;
+    opacity: 0.95;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+
+  &__info {
+    max-width: 445px;
+
+    h4 {
+      margin: 0 0 40px 0;
+      font-weight: 800;
+      font-size: 48px;
+      line-height: 58px;
+      color: var(--light-color);
+    }
+
+    p {
+      margin: 0 0 30px 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 27px;
+      color: var(--light-color);
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      margin: 0 0 20px 0;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 27px;
+      color: var(--light-color);
+
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+}
