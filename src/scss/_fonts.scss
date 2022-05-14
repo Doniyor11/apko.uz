@@ -1,3 +1,4 @@
-
-@include font-face("ProximaNova", "../fonts/ProximaNova-ExtrabldIt", 800, normal);
-@include font-face("ProximaNova", "../fonts/ProximaNova-SemiboldIt", 900, normal);
+@include font-face("ProximaNova", "../fonts/ProximaNovaBold", 700, bold);
+@include font-face("ProximaNova", "../fonts/ProximaNovaSemibold", 600, semi-bold);
+@include font-face("ProximaNova", "../fonts/ProximaNovaExtrabold", 900, extra-bold);
+@include font-face("ProximaNova", "../fonts/ProximaNovaRegular", 400, regular);
