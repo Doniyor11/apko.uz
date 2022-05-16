@@ -1,6 +1,7 @@
 .header {
   background-color: var(--light-color);
   padding: 20px 0 20px 0;
+  border-bottom: 1px solid #cde8fb;
 
   &__menu {
     @include flex-all-sb;

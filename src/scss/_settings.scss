@@ -19,6 +19,7 @@ html {
   min-width: 320px;
   min-height: 100%;
   font-size: 16px;
+  background-color: #fff;
 }
 
 img {
@@ -107,7 +108,6 @@ a {
 }
 
 
-
 .hero__btn {
   font-weight: 400;
   font-size: 14px;
@@ -117,4 +117,10 @@ a {
   box-shadow: var(--btn-shadow);
   border-radius: var(--btn-radius);
   padding: 20px 65px;
+}
+
+.site-container {
+  background-image: url("../img/bgALl.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 64%;
 }

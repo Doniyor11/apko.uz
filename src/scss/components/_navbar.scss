@@ -7,7 +7,12 @@
       font-size: 13px;
       line-height: 16px;
       color: var(--black-color);
+
+      &:hover {
+        color: var(--btn-color);
+      }
     }
+
     &:not(:last-child) {
       margin-right: 35px;
     }
