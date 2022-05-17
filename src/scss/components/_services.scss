@@ -5,6 +5,11 @@
     position: relative;
     border-radius: 10px;
     overflow: hidden;
+    height: 100%;
+
+    img {
+      height: 100%;
+    }
 
     p {
       position: absolute;
@@ -33,7 +38,7 @@
 
   }
 
-  .services__two__item_fulltext{
+  .services__two__item_fulltext {
     max-width: 250px;
   }
 }

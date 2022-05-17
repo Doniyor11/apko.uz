@@ -1,0 +1,48 @@
+.footer {
+  padding: 60px 0 60px;
+
+  &__logo {
+    &-desc {
+      margin: 12px 0 0 0;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 30px;
+      color: #8D8D8D;
+    }
+  }
+
+  &__menu {
+    &-list {
+      &-li {
+        &-title {
+          margin: 0 0 35px 0;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 250%;
+          color: var(--black-color);
+        }
+
+        &-link {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 36px;
+          color: #8d8d8d;
+
+          &:hover {
+            color: var(--btn-color);
+          }
+        }
+
+      }
+
+      .info_link {
+        display: flex;
+        align-items: center;
+
+        img {
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+}

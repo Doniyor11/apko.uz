@@ -94,5 +94,17 @@
       opacity: 0.5;
     }
   }
+
+  &__logo {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 80px;
+    column-gap: 150px;
+
+    &-item {
+      flex: 1 1 10%;
+    }
+  }
 }
 
