@@ -18,8 +18,19 @@
     justify-content: space-between;
     align-items: center;
 
-    img {
-      filter: grayscale(1);
+    a {
+      img {
+        filter: grayscale(1);
+      }
+
+      &:hover {
+        img {
+          filter: grayscale(0);
+        }
+      }
     }
+
+
   }
+
 }

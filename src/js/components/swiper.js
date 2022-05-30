@@ -5,9 +5,15 @@ Swiper.use([Navigation, Pagination]);
 const swiper = new Swiper(".mySwiper2", {
   // Optional parameters
   direction: 'horizontal',
+  mousewheel:
+    {
+      invert: true,
+    },
+  autoplay:
+    {
+      delay: 2000,
+    },
   loop: true,
-
-
   // Navigation arrows
   navigation: {
     nextEl: '.swiper-button-next',
