@@ -52,15 +52,12 @@ const swiper2 = new Swiper(".mySwiper3", {
 
 const swiper3 = new Swiper(".mySwiper4", {
   spaceBetween: 1,
-  slidesPerView: 2,
-  centeredSlides: true,
+  slidesPerView: 6,
+  autoplay:
+    {
+      delay: 2000,
+    },
   loop: true,
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
 
 });
 
@@ -76,6 +73,19 @@ const swiper4 = new Swiper(".mySwiper5", {
     clickable: true,
   },
 
+});
+
+const swiper5 = new Swiper(".mySwiper6", {
+  // Optional parameters
+  spaceBetween: 4,
+  slidesPerView: 1,
+  centeredSlides: true,
+  roundLengths: true,
+  loop: true,
+  pagination: {
+    el: '.slider__pagination',
+    clickable: true,
+  },
 });
 
 

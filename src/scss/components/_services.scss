@@ -1,6 +1,7 @@
 .services {
   padding-top: 100px;
 
+
   &__item {
     position: relative;
     border-radius: 10px;
@@ -48,5 +49,43 @@
 
   .services__two__item_fulltext {
     max-width: 250px;
+  }
+
+  .mySwiper6 {
+    .slider__pagination {
+      text-align: center;
+      margin-top: 30px;
+
+      &.swiper-pagination-bullet {
+        width: 13px;
+        height: 10px;
+        display: inline-block;
+        background-color: #19538A;
+        opacity: .2;
+        margin: 0 5px;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: #19538A;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .services__info {
+      display: none;
+    }
+
+    .mySwiper6 {
+      width: 42%;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    padding-top: 80px;
   }
 }

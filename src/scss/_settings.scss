@@ -119,6 +119,14 @@ a {
   padding: 20px 65px;
 }
 
+@media screen and (max-width: 768px) {
+  .hero__btn {
+    padding: 15px 50px;
+  }
+}
+
+
+
 .site-container {
   background-image: url("../img/bgALl.svg");
   background-repeat: no-repeat;
