@@ -9,6 +9,7 @@
 
     img {
       height: 100%;
+      width: 100%;
     }
 
     p {
@@ -43,6 +44,54 @@
       &:after {
         opacity: 0;
       }
+    }
+  }
+
+  .mySwiper9 {
+    display: none;
+    height: 100%;
+
+    .slider__pagination {
+      text-align: center;
+      margin-top: 30px;
+
+      &.swiper-pagination-bullet {
+        width: 13px;
+        height: 10px;
+        display: inline-block;
+        background-color: #19538A;
+        opacity: .2;
+        margin: 0 5px;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: #19538A;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .mySwiper9 {
+      display: block;
+    }
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  .services__two {
+    .col-lg-6 {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services__two {
+    .col-lg-6 {
+      display: none;
     }
   }
 }

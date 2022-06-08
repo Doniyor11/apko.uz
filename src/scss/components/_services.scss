@@ -10,6 +10,7 @@
 
     img {
       height: 100%;
+      width: 100%;
     }
 
     p {
@@ -47,11 +48,19 @@
     }
   }
 
+  @media screen and (max-width: 992px){
+   .services__info div{
+     margin-bottom: 25px;
+   }
+  }
+
   .services__two__item_fulltext {
     max-width: 250px;
   }
 
   .mySwiper6 {
+    display: none;
+
     .slider__pagination {
       text-align: center;
       margin-top: 30px;
@@ -74,18 +83,28 @@
   }
 
   @media screen and (max-width: 768px) {
+    .mySwiper6 {
+      display: block;
+    }
     .services__info {
       display: none;
     }
 
-    .mySwiper6 {
-      width: 42%;
-    }
   }
 }
 
 @media screen and (max-width: 768px) {
   .services {
     padding-top: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .services {
+    padding-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }

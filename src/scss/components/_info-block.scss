@@ -53,6 +53,28 @@
     }
   }
 
+  @media screen and (max-width: 576px) {
+    &__row {
+      text-align: center;
+
+      &-title {
+        max-width: 380px;
+        margin: 20px auto;
+        font-size: 32px;
+      }
+
+      &-desc {
+        margin: 20px auto;
+        max-width: 525px;
+        font-size: 18px;
+      }
+
+      .hero__btn {
+        display: none;
+      }
+    }
+  }
+
   .mobile__btn {
     display: none;
   }
@@ -68,5 +90,11 @@
 @media screen and (max-width: 768px) {
   .info {
     padding-top: 80px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .info {
+    padding-top: 60px;
   }
 }

@@ -1,5 +1,5 @@
 .footer {
-  padding: 60px 0 60px;
+  padding: 60px 0 60px 0;
 
   &__logo {
     &-desc {
@@ -35,6 +35,14 @@
 
       }
 
+      @media screen and (max-width: 768px) {
+        &-li {
+          &-title {
+            margin: 0;
+          }
+        }
+      }
+
       .info_link {
         display: flex;
         align-items: center;
@@ -43,6 +51,30 @@
           margin-right: 8px;
         }
       }
+
+      @media screen and (max-width: 768px) {
+        .info_link {
+          justify-content: center;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__menu {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 40px 0 40px 0;
+    text-align: center;
+
+    .col-mb-6 {
+      display: none;
     }
   }
 }

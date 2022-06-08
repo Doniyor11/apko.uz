@@ -2,6 +2,7 @@
 import Swiper, {Navigation, Pagination} from 'swiper';
 
 Swiper.use([Navigation, Pagination]);
+
 const swiper = new Swiper(".mySwiper2", {
   // Optional parameters
   direction: 'horizontal',
@@ -79,13 +80,166 @@ const swiper5 = new Swiper(".mySwiper6", {
   // Optional parameters
   spaceBetween: 4,
   slidesPerView: 1,
-  centeredSlides: true,
-  roundLengths: true,
   loop: true,
   pagination: {
     el: '.slider__pagination',
     clickable: true,
   },
+  breakpoints: {
+    // when window width is >= 320px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 2,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 1
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 1
+    }
+  }
 });
 
+const swiper6 = new Swiper(".mySwiper7", {
+  // Optional parameters
+  spaceBetween: 4,
+  slidesPerView: 1,
+  loop: true,
+  pagination: {
+    el: '.slider__pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 2,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 1
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 1
+    }
+  }
+});
 
+const swiper7 = new Swiper(".mySwiper8", {
+  // Optional parameters
+  spaceBetween: 8,
+  slidesPerView: 1,
+  loop: true,
+  pagination: {
+    el: '.slider__pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 2,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 1
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 1
+    }
+  }
+});
+
+const swiper8 = new Swiper(".mySwiper9", {
+  // Optional parameters
+  spaceBetween: 4,
+  slidesPerView: 1,
+  loop: true,
+  pagination: {
+    el: '.slider__pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 2,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 1
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 1
+    }
+  }
+});
+
+const swiper9 = new Swiper(".mySwiper10", {
+  // Optional parameters
+  spaceBetween: 3,
+  slidesPerView: 3,
+  loop: true,
+  pagination: {
+    el: '.slider__pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 3,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 2
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 2
+    }
+  }
+});
+
+const swiper10 = new Swiper(".mySwiper11", {
+  // Optional parameters
+  spaceBetween: 3,
+  slidesPerView: 3,
+  loop: true,
+  pagination: {
+    el: '.slider__pagination',
+    clickable: true,
+  },
+  breakpoints: {
+    // when window width is >= 320px
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 3,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 2
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 2
+    }
+  }
+});
