@@ -11,6 +11,18 @@
     }
   }
 
+  @media screen and (max-width: 768px) {
+    &-title {
+      padding-top: 35px;
+
+      h4 {
+        margin: 0;
+        font-size: 32px;
+        line-height: 40px;
+      }
+    }
+  }
+
   &-info {
     &-box {
       display: flex;
@@ -172,6 +184,105 @@
 
         &:not(:last-child) {
           margin-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &-info {
+      &-box {
+        margin-top: 45px;
+        padding: 15px 20px 15px 20px;
+        flex-direction: column;
+
+        &-text {
+          width: 100%;
+          max-width: 100%;
+          z-index: 2;
+          justify-content: flex-start !important;
+
+          p {
+            margin: 20px 0 20px 0;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+          }
+
+          .circle {
+            text-align: left;
+          }
+
+          &-btn {
+            padding: 15px 30px;
+            display: block;
+            margin: 0 auto;
+          }
+
+          .list-reset {
+
+            li {
+              &:not(:last-child) {
+                margin-bottom: 15px;
+              }
+            }
+
+          }
+        }
+
+      }
+
+      &-text {
+        padding: 60px 0 140px 0;
+
+        &-title {
+          font-size: 22px;
+          line-height: 30px;
+        }
+
+        &-list {
+          margin: 40px 0 40px 0;
+          flex-direction: column;
+        }
+
+
+        &-desc {
+          font-size: 18px;
+          line-height: 20px;
+
+          &:not(:last-child) {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    &-info {
+      &-box {
+        padding: 15px;
+
+        &-text {
+
+          &-btn {
+            margin: 0 auto 10px;
+          }
+
+        }
+
+      }
+
+      &-text {
+        padding: 60px 0 80px 0;
+
+        &-title {
+          font-size: 18px;
+          line-height: 30px;
+        }
+
+        &-list {
+          margin: 35px 0 35px 0;
         }
       }
     }

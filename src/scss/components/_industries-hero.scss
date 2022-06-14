@@ -35,6 +35,32 @@
 
           }
 
+          @media screen and (max-width: 1440px) {
+            .industries-hero__text {
+              padding: 275px 15px 0 15px;
+
+            }
+          }
+
+          @media screen and (max-width: 768px) {
+            .industries-hero__text {
+              text-align: center;
+
+              p {
+                max-width: 100%;
+              }
+            }
+          }
+
+          @media screen and (max-width: 576px) {
+            .industries-hero__text {
+              padding: 275px 15px 0 15px;
+
+              p {
+                max-width: 95%;
+              }
+            }
+          }
 
         }
 
@@ -48,56 +74,7 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background: rgba(#19528a, 0.6);
-          }
-        }
-      }
-
-      .swiper-button-next {
-        left: 400px;
-        top: 80%;
-
-        svg {
-          path {
-            opacity: 0.5;
-            fill: #fff;
-          }
-        }
-
-        &:after {
-          content: none;
-        }
-
-        &:hover {
-          svg {
-            path {
-              opacity: 1;
-              fill: #fff;
-            }
-          }
-        }
-      }
-
-      .swiper-button-prev {
-        left: 320px;
-        top: 80%;
-
-        svg {
-          path {
-            fill: #fff;
-          }
-        }
-
-        &:after {
-          content: none;
-        }
-
-        &:hover {
-          svg {
-            path {
-              opacity: 1;
-              fill: #fff;
-            }
+            background: rgba(#19528a, 0.5);
           }
         }
       }
@@ -205,16 +182,25 @@
               }
             }
           }
+
         }
 
       }
     }
-
   }
+
 
   &__text {
     .row {
       padding: 100px 0 100px 0;
+    }
+
+    @media screen and (max-width: 768px) {
+      .row {
+        padding: 70px 0 70px 0;
+        flex-direction: column-reverse;
+        row-gap: 30px;
+      }
     }
 
     &-title {
@@ -223,6 +209,12 @@
       font-size: 36px;
       line-height: 44px;
       color: var(--black-color);
+    }
+
+    @media screen and (max-width: 768px) {
+      &-title {
+        font-size: 32px;
+      }
     }
 
     &-list {
@@ -259,6 +251,14 @@
 
         &:not(:last-child) {
           margin-bottom: 50px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        li {
+          &:not(:last-child) {
+            margin-bottom: 30px;
+          }
         }
       }
     }

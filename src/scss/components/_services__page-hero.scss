@@ -29,6 +29,28 @@
     }
   }
 
+  @media screen and (max-width: 992px) {
+    &-text {
+      min-height: 580px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &-text {
+      min-height: 380px;
+
+      &-title {
+        font-size: 32px;
+        line-height: 50px;
+      }
+
+      &-desc {
+        margin: 20px 0 0 0;
+        font-size: 18px;
+      }
+    }
+  }
+
   &:after {
     content: '';
     position: absolute;

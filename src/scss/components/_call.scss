@@ -24,10 +24,14 @@
     }
   }
 
-  @media screen and (max-width: 576px){
-    &-title {
-      font-size: 28px;
-      padding-bottom: 40px;
+  @media screen and (max-width: 576px) {
+    &__info {
+      padding: 0 15px 0 15px;
+
+      &-title {
+        font-size: 28px;
+        padding-bottom: 40px;
+      }
     }
   }
 
