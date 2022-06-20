@@ -1,15 +1,18 @@
 // Подключение свайпера
-import Swiper, {Navigation, Pagination} from 'swiper';
+import Swiper, {Autoplay, Navigation, Pagination} from 'swiper';
 
-Swiper.use([Navigation, Pagination]);
+Swiper.use([Navigation, Pagination, Autoplay]);
 
 const swiper = new Swiper(".mySwiper2", {
   // Optional parameters
   direction: 'horizontal',
-  autoplay: 2500,
   mousewheel:
     {
       invert: true,
+    },
+  autoplay:
+    {
+      delay: 3000,
     },
   loop: true,
   // Navigation arrows
@@ -26,6 +29,7 @@ const slider = document.querySelector('.swiper-wrapper')
 slider.addEventListener('slideChange', function (realIndex) {
   if (document.querySelector('.swiper-slide.swiper-slide-active').classList.contains('dark')) {
     document.querySelector('.swiper__info-boxes').classList.add('active')
+    console.log('salom')
   } else {
     document.querySelector('.swiper__info-boxes').removeClass('active');
   }
@@ -42,7 +46,7 @@ const swiper2 = new Swiper(".mySwiper3", {
     },
   autoplay:
     {
-      delay: 2000,
+      delay: 3000,
     },
   loop: true,
 
@@ -63,7 +67,7 @@ const swiper3 = new Swiper(".mySwiper4", {
     },
   autoplay:
     {
-      delay: 2000,
+      delay: 3000,
     },
   loop: true,
   breakpoints: {
@@ -104,7 +108,7 @@ const swiper4 = new Swiper(".mySwiper5", {
     },
   autoplay:
     {
-      delay: 2000,
+      delay: 3000,
     },
   loop: true,
 
@@ -126,7 +130,7 @@ const swiper5 = new Swiper(".mySwiper6", {
     },
   autoplay:
     {
-      delay: 2000,
+      delay: 3000,
     },
   loop: true,
   pagination: {
@@ -162,7 +166,7 @@ const swiper6 = new Swiper(".mySwiper7", {
     },
   autoplay:
     {
-      delay: 2000,
+      delay: 3000,
     },
   loop: true,
   pagination: {
@@ -198,7 +202,7 @@ const swiper7 = new Swiper(".mySwiper8", {
     },
   autoplay:
     {
-      delay: 2000,
+      delay: 3000,
     },
   loop: true,
   pagination: {
@@ -234,7 +238,7 @@ const swiper8 = new Swiper(".mySwiper9", {
     },
   autoplay:
     {
-      delay: 2000,
+      delay: 3000,
     },
   loop: true,
   pagination: {
@@ -270,7 +274,7 @@ const swiper9 = new Swiper(".mySwiper10", {
     },
   autoplay:
     {
-      delay: 2000,
+      delay: 3000,
     },
   loop: true,
   pagination: {
@@ -318,7 +322,7 @@ const swiper10 = new Swiper(".mySwiper11", {
     },
   autoplay:
     {
-      delay: 2000,
+      delay: 3000,
     },
   loop: true,
   pagination: {
@@ -366,7 +370,7 @@ const swiper11 = new Swiper(".mySwiper12", {
     },
   autoplay:
     {
-      delay: 2000,
+      delay: 3000,
     },
   loop: true,
   pagination: {
