@@ -1,14 +1,17 @@
 .services {
   padding-top: 100px;
 
+
   &__item {
     position: relative;
     border-radius: 10px;
     overflow: hidden;
     height: 100%;
+    display: inline-block;
 
     img {
       height: 100%;
+      width: 100%;
     }
 
     p {
@@ -34,11 +37,75 @@
       height: 100%;
       background-color: var(--btn-color);
       opacity: 0.4;
+      transition: all 0.3s ease-in;
     }
 
+    &:hover {
+      cursor: pointer;
+
+      &:after {
+        opacity: 0;
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .services__info div {
+      margin-bottom: 25px;
+    }
   }
 
   .services__two__item_fulltext {
     max-width: 250px;
+  }
+
+  .mySwiper6 {
+    display: none;
+
+    .slider__pagination {
+      text-align: center;
+      margin-top: 30px;
+
+      &.swiper-pagination-bullet {
+        width: 13px;
+        height: 10px;
+        display: inline-block;
+        background-color: #19538A;
+        opacity: .2;
+        margin: 0 5px;
+        -webkit-border-radius: 20px;
+        border-radius: 20px;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: #19538A;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .mySwiper6 {
+      display: block;
+    }
+    .services__info {
+      display: none;
+    }
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .services {
+    padding-top: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .services {
+    padding-top: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }

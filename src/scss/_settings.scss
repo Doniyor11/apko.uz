@@ -117,10 +117,24 @@ a {
   box-shadow: var(--btn-shadow);
   border-radius: var(--btn-radius);
   padding: 20px 65px;
+  display: inline-block;
 }
+
+@media screen and (max-width: 768px) {
+  .hero__btn {
+    padding: 15px 50px;
+  }
+}
+
 
 .site-container {
   background-image: url("../img/bgALl.svg");
   background-repeat: no-repeat;
   background-position: 100% 64%;
+}
+
+@media screen and (max-width: 768px) {
+  .site-container {
+    background-image: none;
+  }
 }

@@ -11,6 +11,17 @@
       max-width: 315px;
     }
 
+    @media screen and (max-width: 768px) {
+      &-title {
+        margin: 0 auto;
+      }
+    }
+    @media screen and (max-width: 576px) {
+      &-title {
+        font-size: 32px;
+      }
+    }
+
     &-desc {
       margin: 45px 0 0 0;
       max-width: 525px;
@@ -22,8 +33,46 @@
       opacity: 0.8
     }
 
+    @media screen and (max-width: 768px) {
+      &-desc {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+
     .hero__btn {
       margin-top: 50px;
     }
+
+    @media screen and (max-width: 768px) {
+      .hero__btn {
+        display: none;
+      }
+    }
+  }
+
+  .mobile__btn {
+    display: none;
+  }
+
+  @media screen and (max-width: 768px) {
+    .mobile__btn {
+      display: inline-block;
+      margin-top: 15px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info__two {
+    padding-top: 80px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .info__two {
+    padding-top: 60px;
+    text-align: center;
   }
 }

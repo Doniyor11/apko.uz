@@ -2,15 +2,38 @@
   background-color: var(--light-color);
   padding: 20px 0 20px 0;
   border-bottom: 1px solid #cde8fb;
+  position: relative;
 
   &__menu {
     @include flex-all-sb;
-
   }
 
-  &__navbar {
-    @include flex-v-center;
+  &__lang {
+    border: none;
+    padding: 5px;
 
+    &:hover {
+      cursor: pointer;
+    }
   }
 
+
+  &__mobile-menu {
+    display: none;
+  }
+
+  @media screen and (max-width: 820px) {
+    &__mobile-menu {
+      display: block;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    &__mobile-menu {
+      display: block;
+    }
+  }
 }
+
+
+
+

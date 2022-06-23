@@ -68,6 +68,41 @@
     }
   }
 
+  @media screen and (max-width: 992px){
+    &__info {
+      padding: 80px 0 80px 0;
+
+      &-title {
+        margin: 0 0 40px 0;
+        font-size: 32px;
+      }
+
+      &-desc {
+        margin: 0 0 20px 0;
+      }
+
+      &-btn {
+        padding: 15px 45px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    &__info {
+      padding: 60px 0 60px 0;
+
+      &-title {
+        margin: 0 0 30px 0;
+        font-size: 28px;
+      }
+
+      &-desc {
+        margin: 0 0 15px 0;
+      }
+
+    }
+  }
+
   &__feedback {
     background-image: url('../img/aboutContactBg.png');
     background-repeat: no-repeat;
@@ -186,6 +221,67 @@
           transition: all 0.3s;
           vertical-align: middle;
           padding: 16px 54px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 992px){
+    &__feedback {
+      background-image: url('../img/aboutContactBg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-height: 600px;
+
+
+      &-title {
+        padding-top: 100px;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        color: var(--light-color);
+      }
+
+      &-btn {
+        margin-top: 20px;
+        padding: 15px 45px;
+      }
+
+      form {
+        padding: 0 160px 0 160px;
+
+      }
+    }
+  }
+
+  @media screen and (max-width: 768px){
+    &__feedback {
+      background-image: url('../img/aboutContactBg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      min-height: 640px;
+
+
+      &-title {
+        padding-top: 20px;
+        font-size: 32px;
+        margin-bottom: 15px;
+      }
+
+      &-btn {
+        margin-top: 20px;
+        padding: 15px 45px;
+      }
+
+      form {
+        padding: 0 120px 0 120px;
+
+
+        select {
+          margin-bottom: 15px;
         }
       }
     }
